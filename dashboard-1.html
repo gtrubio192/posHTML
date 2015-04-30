@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head ng-app="app">
   <title>Lunchbox</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></link>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"></link>
@@ -32,14 +32,20 @@
       </div>
       <div class="panel-body">
         <div class="student-rows">
-          <a href="dashboard-2.html"><div class="student-row">Gabe</div></a>
+          <a href="dashboard-2.html">
+            <div class="student-row col-lg-12">
+              <span class="col-lg-6">Gabe</span>
+              <span class="col-lg-6">{{balance}}</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
   
   
-  <script src="jquery.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   </body>
 
